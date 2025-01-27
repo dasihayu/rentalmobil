@@ -1,4 +1,4 @@
-<header class="header my-40">
+<header class="my-40 header">
     <div class="container-fluid">
         <nav class="navigation d-flex align-items-center justify-content-between">
             <a href="index-2.html" class="d-flex align-items-center">
@@ -14,7 +14,7 @@
                             <a href="{{ route('about') }}">About us</a>
                         </li>
                         <li>
-                            <a href="">Rental</a>
+                            <a href="{{ route('rental') }}">Rental</a>
                         </li>
                         <li>
                             <a href="">Blog</a>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="main-menu__right">
-                <div class="search-heart-icon d-md-flex d-none align-items-center gap-24">
+                <div class="gap-24 search-heart-icon d-md-flex d-none align-items-center">
                     <a href="book-now.html" class="cus-btn">
                         <span class="btn-text">
                             Book now

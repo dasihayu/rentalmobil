@@ -5,4 +5,5 @@
 @include('front.about.sections.title')
 @include('front.about.sections.vehicle')
 @include('front.about.sections.choseus')
+@include('front.about.sections.category')
 @endsection
