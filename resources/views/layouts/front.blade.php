@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-Unb4qzXJkE5kgcy1"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Car Rental || E-Learning HTML Template">
     <title>@yield('title', 'Car Rental')</title>
@@ -24,10 +26,10 @@
 
 <body class="x-hidden">
     <!-- PRELOADER START -->
-    {{-- <div id="preloader">
+    <div id="preloader">
         <div class="spinner"></div>
         <div id="content"></div>
-    </div> --}}
+    </div>
     <!-- PRELOADER END -->
 
     <!-- HEADER MENU START -->
@@ -73,14 +75,14 @@
     <!-- All JS files -->
     
 
-    <script src="{{ asset('front/assets/js/vendor/bootstrap.min.js') }}">
-    <script src="{{ asset('front/assets/js/vendor/jquery-3.6.3.min.js') }}">
-    <script src="{{ asset('front/assets/js/vendor/slick.min.js') }}">
-    <script src="{{ asset('front/assets/js/vendor/smooth-scrollbar.js') }}">
-    <script src="{{ asset('front/assets/js/vendor/picker.js') }}">
-    <script src="{{ asset('front/assets/js/vendor/picker.date.js') }}">
-    <script src="{{ asset('front/assets/js/date.js') }}">
-    <script src="{{ asset('front/assets/js/app.js') }}">
+    <script src="{{ asset('front/assets/js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('front/assets/js/vendor/jquery-3.6.3.min.js') }}"></script>
+    <script src="{{ asset('front/assets/js/vendor/slick.min.js') }}"></script>
+    <script src="{{ asset('front/assets/js/vendor/smooth-scrollbar.js') }}"></script>
+    <script src="{{ asset('front/assets/js/vendor/picker.js') }}"></script>
+    <script src="{{ asset('front/assets/js/vendor/picker.date.js') }}"></script>
+    <script src="{{ asset('front/assets/js/date.js') }}"></script>
+    <script src="{{ asset('front/assets/js/app.js') }}"></script>
     
 </body>
 </html>
