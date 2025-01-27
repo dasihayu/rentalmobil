@@ -1,5 +1,8 @@
 @extends('layouts.front')
 @section('title', 'About Us')
 @section('content')
-<h1>Selamat datang di about<h1>
+@include('front.about.sections.banner')
+@include('front.about.sections.title')
+@include('front.about.sections.vehicle')
+@include('front.about.sections.choseus')
 @endsection
