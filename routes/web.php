@@ -79,7 +79,9 @@ Route::get('/dashboard/about_us/edit', function () {
     return view('back.about_us.edit');
 });
 
-
+Route::get('/dashboard/blogs', function () {
+    return view('back.blog.index');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
