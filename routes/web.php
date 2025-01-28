@@ -156,6 +156,10 @@ Route::get('/dashboard/reviews', function () {
     return view('back.reviews.index');
 });
 
+Route::get('/dashboard/contacts', function () {
+    return view('back.contacts.index');
+});
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
