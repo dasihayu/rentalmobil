@@ -127,6 +127,20 @@ Route::get('/dashboard/faqs/edit', function () {
     return view('back.faqs.edit');
 });
 
+Route::get('/dashboard/feature', function () {
+    return view('back.feature.index');
+});
+
+Route::get('/dashboard/feature/create', function () {
+    return view('back.feature.create');
+});
+
+Route::get('/dashboard/feature/edit', function () {
+    return view('back.feature.edit');
+});
+
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
