@@ -39,6 +39,19 @@ Route::get('/dashboard/users/updateuser', function () {
     return view('back.users.edit_user');
 });
 
+Route::get('/dashboard/users', function () {
+    return view('back.users.index');
+});
+
+Route::get('/dashboard/users/create', function () {
+    return view('back.users.create');
+});
+
+Route::get('/dashboard/users/edit', function () {
+    return view('back.users.edit');
+});
+
+
 Route::get('/dashboard/users/cars', function () {
     return view('back.car.index');
 });
