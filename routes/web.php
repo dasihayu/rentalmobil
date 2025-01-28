@@ -55,6 +55,18 @@ Route::get('/dashboard/cars/images', function () {
     return view('back.car.addimages');
 });
 
+Route::get('/dashboard/categories', function () {
+    return view('back.category.index');
+});
+
+Route::get('/dashboard/categories/create', function () {
+    return view('back.category.create');
+});
+
+Route::get('/dashboard/categories/edit', function () {
+    return view('back.category.edit');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
