@@ -103,6 +103,18 @@ Route::get('/dashboard/hero/edit', function () {
     return view('back.hero.edit');
 });
 
+Route::get('/dashboard/about_section', function () {
+    return view('back.aboutsection.index');
+});
+
+Route::get('/dashboard/about_section/create', function () {
+    return view('back.aboutsection.create');
+});
+
+Route::get('/dashboard/about_section/edit', function () {
+    return view('back.aboutsection.edit');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
