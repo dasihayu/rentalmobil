@@ -39,6 +39,22 @@ Route::get('/dashboard/users/updateuser', function () {
     return view('back.users.edit_user');
 });
 
+Route::get('/dashboard/users/cars', function () {
+    return view('back.car.index');
+});
+
+Route::get('/dashboard/cars/create', function () {
+    return view('back.car.create');
+});
+
+Route::get('/dashboard/cars/edit', function () {
+    return view('back.car.edit');
+});
+
+Route::get('/dashboard/cars/images', function () {
+    return view('back.car.addimages');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
