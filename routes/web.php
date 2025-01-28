@@ -152,6 +152,9 @@ Route::get('/dashboard/feature/edit', function () {
     return view('back.feature.edit');
 });
 
+Route::get('/dashboard/reviews', function () {
+    return view('back.reviews.index');
+});
 
 
 Route::middleware('auth')->group(function () {
