@@ -35,6 +35,10 @@ Route::get('/dashboard/booking/detail', function () {
     return view('back.booking.detail');
 });
 
+Route::get('/dashboard/users/updateuser', function () {
+    return view('back.users.edit_user');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
