@@ -83,6 +83,26 @@ Route::get('/dashboard/blogs', function () {
     return view('back.blog.index');
 });
 
+Route::get('/dashboard/blogs/create', function () {
+    return view('back.blog.create');
+});
+
+Route::get('/dashboard/blogs/edit', function () {
+    return view('back.blog.edit');
+});
+
+Route::get('/dashboard/hero', function () {
+    return view('back.hero.index');
+});
+
+Route::get('/dashboard/hero/create', function () {
+    return view('back.hero.create');
+});
+
+Route::get('/dashboard/hero/edit', function () {
+    return view('back.hero.edit');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -90,4 +110,4 @@ Route::middleware('auth')->group(function () {
 });
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
